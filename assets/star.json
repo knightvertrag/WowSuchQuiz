@@ -1,0 +1,43 @@
+[
+  {
+    "1": "Who played Luke Skywalker in the star wars films ?",
+    "2": "Who voiced C3-PO in the films ?",
+    "3": "Which other character is Mark Hamill known for best other than Luke Skywalker ?",
+    "4": "Why did Luke use a green lightsaber in Return of the Jedi ?",
+    "5": ""
+  },
+  {
+    "1": {
+      "a": "Mark Hamill",
+      "b": "Harrison Ford",
+      "c": "Carrie Fischer",
+      "d": "Adam Driver"
+
+    },
+    "2": {
+      "a": "Lance Dirby",
+      "b": "Qui Gon Jin,",
+      "c": "Anthony Daniels",
+      "d": "Mark Hamill"
+    },
+    "3": {
+      "a": "The Joker",
+      "b": "Batman",
+      "c": "Jack Dirby",
+      "d": "John Marston"
+    },
+    "4": {
+      "a": "He became stronger with the force",
+      "b": "Mark Hamill requested for it",
+      "c": "The Blue Lightsaber got destroyed",
+      "d": "Blue lightsaber could not be rendered in front of blue sky"
+    }
+  },
+  {
+    "1": "Mark Hamill",
+    "2": "Anthony Daniels",
+    "3": "The Joker",
+    "4": "Blue lightsaber could not be rendered in front of blue sky"
+  }
+
+]
