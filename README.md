@@ -1,16 +1,13 @@
 # wow_such_quiz
 
-quiz dum dum
+A very basic quiz app built using flutter for android.
 
-## Getting Started
+## Building
 
-This project is a starting point for a Flutter application.
+You will require flutter as well as the Android SDK(provided by default with Android Studio).
 
-A few resources to get you started if this is your first Flutter project:
+1. Clone the repo and open the repo folder with your favorite editor(I would personally suggest vs-code) or open the project with Android Studio.
+1. Download any required extensions as prompted by your IDE.
+1. Connect your android device with debugger options turned on or use an android emulator(can be setup using android studio)
+1. Run main.dart and you are ready to go
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
