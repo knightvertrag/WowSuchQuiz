@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "900302299521",
+    "firebase_url": "https://wowsuchquiz.firebaseio.com",
+    "project_id": "wowsuchquiz",
+    "storage_bucket": "wowsuchquiz.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:900302299521:android:1753471d723018e3784880",
+        "android_client_info": {
+          "package_name": "com.dogestudios.wow_such_quiz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "900302299521-afkjbnlvb5q5i9v5kbjc73s1cdv32af1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dogestudios.wow_such_quiz",
+            "certificate_hash": "975f2b1911820c2034dba56fd683b364b7fb16be"
+          }
+        },
+        {
+          "client_id": "900302299521-vadlv2dhkupvckde0k1i4201iam98uf7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqV6jIk0E5_Kt0her8kk3u2newcxOMzSU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "900302299521-vadlv2dhkupvckde0k1i4201iam98uf7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

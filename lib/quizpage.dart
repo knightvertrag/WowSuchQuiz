@@ -22,24 +22,24 @@ class getjson extends StatelessWidget {
             ),
           );
         } else {
-          return quizpage(mydata: mydata);
+          return Quizpage(mydata: mydata);
         }
       },
     );
   }
 }
 
-class quizpage extends StatefulWidget {
+class Quizpage extends StatefulWidget {
 
   var mydata;
 
-  quizpage({Key key, @required this.mydata}) : super(key: key);
+  Quizpage({Key key, @required this.mydata}) : super(key: key);
 
   @override
   _quizpageState createState() => _quizpageState(mydata);
 }
 
-class _quizpageState extends State<quizpage> {
+class _quizpageState extends State<Quizpage> {
 
   var mydata;
   _quizpageState(this.mydata);
