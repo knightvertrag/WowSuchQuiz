@@ -82,7 +82,7 @@ class _HomepageState extends State<Homepage> {
     return Scaffold(
       backgroundColor: Colors.grey[850],
       appBar: AppBar(
-        backgroundColor: Colors.grey[800],
+        backgroundColor: Colors.black54,
         title: Text(
           "WowSuchQuiz",
           style: TextStyle(
@@ -94,7 +94,7 @@ class _HomepageState extends State<Homepage> {
         position: DecorationPosition.background,
         decoration: BoxDecoration(
           color: Colors.transparent,
-          image: DecorationImage(image: AssetImage('images/night.jpg'), fit: BoxFit.cover),
+          image: DecorationImage(image: AssetImage('images/destroyer.jpg'), fit: BoxFit.cover),
         ),
         child: ListView(
           children: <Widget>[
