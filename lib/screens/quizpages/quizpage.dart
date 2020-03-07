@@ -2,7 +2,7 @@ import 'dart:async';
 import 'dart:convert';
 import 'dart:io';
 import 'package:flutter/services.dart';
-import 'package:wow_such_quiz/resultpage.dart';
+import 'package:wow_such_quiz/screens/quizpages/resultpage.dart';
 
 import 'package:flutter/material.dart';
 
@@ -96,7 +96,7 @@ class _quizpageState extends State<Quizpage> {
       }
       else{
         Navigator.of(context).pushReplacement(MaterialPageRoute(
-          builder: (context) => resultpage(marks : marks),
+          builder: (context) => Resultpage(marks : marks),
         ));
       }
       btncolor['a'] = Colors.transparent;

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:wow_such_quiz/quizpage.dart';
+import 'package:wow_such_quiz/screens/quizpages/quizpage.dart';
 
 class Homepage extends StatefulWidget {
   @override

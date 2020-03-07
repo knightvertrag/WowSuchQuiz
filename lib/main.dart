@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:wow_such_quiz/splash.dart';
+import 'package:wow_such_quiz/screens/splash.dart';
 
 void main() => runApp(MyApp());
 
