@@ -6,8 +6,7 @@
 A very basic quiz app built using flutter for android. User authorization is managed using firebase.
 
   
-
-![Image of Quiz Page](images/s1.png)
+<img align = "center" src="images/s1.png" height = "400">
 
   
 
