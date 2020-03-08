@@ -16,7 +16,9 @@ A very basic quiz app built using flutter for android. User authorization is man
   
 
 *You will require flutter and the Android SDK to follow along.*
-For the complete set up to start working with flutter please visit here: [https://flutter.dev/docs/get-started/install](https://flutter.dev/docs/get-started/install)
+
+For the complete set up to start working with flutter please visit here:
+[https://flutter.dev/docs/get-started/install](https://flutter.dev/docs/get-started/install)
 Choose your operating system and proceed accordingly.
  
 
