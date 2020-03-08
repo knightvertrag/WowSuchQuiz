@@ -7,6 +7,10 @@ A very basic quiz app built using flutter for android. User authorization is man
 
   
 <img align = "center" src="images/s1.png" height = "400">
+<img align = "center" src="images/s2.png" height = "400">
+<img align = "center" src="images/s3.png" height = "400">
+
+
 
   
 
