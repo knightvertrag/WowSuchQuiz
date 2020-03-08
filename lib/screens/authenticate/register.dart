@@ -3,15 +3,17 @@ import 'package:wow_such_quiz/services/auth.dart';
 import 'package:wow_such_quiz/shared/constants.dart';
 import 'package:wow_such_quiz/shared/loading.dart';
 
-class SignIn extends StatefulWidget {
+class Register extends StatefulWidget {
+
   final Function toggleView;
-  SignIn({this.toggleView});
+  Register({this.toggleView});
+
 
   @override
-  _SignInState createState() => _SignInState();
+  _RegisterState createState() => _RegisterState();
 }
 
-class _SignInState extends State<SignIn> {
+class _RegisterState extends State<Register> {
   final AuthService _auth = AuthService();
   final _formKey = GlobalKey<FormState>();
   bool loading = false;
@@ -29,7 +31,7 @@ class _SignInState extends State<SignIn> {
           centerTitle: true,
           backgroundColor: Colors.transparent,
           title: Text(
-            'Log in',
+            'Sign up',
             style: TextStyle(
               fontFamily: 'Satisfy',
               color: Colors.white,
@@ -43,7 +45,7 @@ class _SignInState extends State<SignIn> {
                 color: Colors.amber,
               ),
               label: Text(
-                'Register',
+                'Sign in',
                 style: TextStyle(color: Colors.amber),
               ),
               onPressed: () {
@@ -76,49 +78,43 @@ class _SignInState extends State<SignIn> {
                       onChanged: (val) {
                         setState(() => email = val);
                       },
-                      decoration: textInputDecoration.copyWith(
-                          hintText: 'Email', icon: Icon(Icons.email)),
+                      decoration: textInputDecoration.copyWith(hintText: 'Email', icon: Icon(Icons.email)),
                     ),
                     SizedBox(
                       height: 20.0,
                     ),
                     TextFormField(
-                        obscureText: true,
-                        validator: (val) => val.length < 6
-                            ? 'Enter a password 6+ chars long'
-                            : null,
-                        onChanged: (val) {
-                          setState(() => password = val);
-                        },
-                        decoration: textInputDecoration.copyWith(
-                            hintText: 'Password',
-                            icon: Icon(Icons.remove_red_eye))),
+                      obscureText: true,
+                      validator: (val) => val.length < 6 ? 'Enter a password 6+ chars long' : null,
+                      onChanged: (val) {
+                        setState(() => password = val);
+                      },
+                      decoration: textInputDecoration.copyWith(hintText: 'Password', icon: Icon(Icons.remove_red_eye)),
+                    ),
                     SizedBox(
                       height: 20.0,
                     ),
                     RaisedButton(
                       color: Colors.black38,
                       child: Text(
-                        'Sign in',
+                        'Sign up',
                         style: TextStyle(color: Colors.white),
                       ),
                       onPressed: () async {
                         if (_formKey.currentState.validate()) {
                           setState(() => loading = true);
-                          dynamic result = await _auth
-                              .signInWithEmailAndPassword(email, password);
-                          if (result == null) {
-                            setState(() {
-                              error = 'COULD NOT SIGN IN WITH GIVEN CREDENTIALS';
-                              loading = false;
-                            });
-                          }
+                            dynamic result = await _auth.registerWithEmailAndPassword(email, password);
+                            if (result == null) {
+                              setState(() {
+                                error = 'please provide a valid email';
+                                loading = false;
+                              });
+                            }
+                        } else {
                         }
                       },
                     ),
-                    SizedBox(
-                      height: 12.0,
-                    ),
+                    SizedBox(height: 12.0,),
                     Text(
                       error,
                       style: TextStyle(color: Colors.red, fontSize: 14.0),

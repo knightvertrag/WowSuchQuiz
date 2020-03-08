@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:wow_such_quiz/screens/quizpages/quizpage.dart';
+import 'package:wow_such_quiz/services/auth.dart';
 
 class Homepage extends StatefulWidget {
   @override
@@ -8,6 +9,8 @@ class Homepage extends StatefulWidget {
 }
 
 class _HomepageState extends State<Homepage> {
+
+  final AuthService _auth = AuthService();
 
   List<String> images = [
     "images/star.png",
@@ -89,6 +92,15 @@ class _HomepageState extends State<Homepage> {
             fontFamily: 'Satisfy',
           ),
         ),
+        actions: <Widget>[
+          FlatButton.icon(
+            icon: Icon(Icons.person, color: Colors.white,),
+            label: Text('logout', style: TextStyle(color: Colors.white),),
+            onPressed: () async{
+              await _auth.signOut();
+            },
+          )
+        ],
       ),
       body: DecoratedBox(
         position: DecorationPosition.background,
@@ -99,6 +111,8 @@ class _HomepageState extends State<Homepage> {
         child: ListView(
           children: <Widget>[
             customcard('Star Wars', images[0]),
+            SizedBox(height: 30.0,)
+
           ],
         ),
       ),
