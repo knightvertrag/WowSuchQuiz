@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:wow_such_quiz/models/user.dart';
 import 'package:wow_such_quiz/screens/splash.dart';
-import 'package:wow_such_quiz/screens/wrapper.dart';
 import 'package:provider/provider.dart';
 import 'package:wow_such_quiz/services/auth.dart';
 

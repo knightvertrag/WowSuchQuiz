@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:wow_such_quiz/screens/home.dart';
+
 import 'package:flutter/material.dart';
 import 'package:wow_such_quiz/screens/wrapper.dart';
 
